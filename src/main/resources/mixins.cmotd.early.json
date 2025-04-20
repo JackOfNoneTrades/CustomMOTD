@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8.7-GTNH",
+  "package": "org.fentanylsolutions.cmotd.mixins.early",
+  "refmap": "mixins.cmotd.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "server": [
+    "minecraft.MixinMinecraftServer"
+  ]
+}

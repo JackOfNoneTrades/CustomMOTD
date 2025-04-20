@@ -29,11 +29,24 @@ public class EventsHandler {
     private float tickCounter = -69;
     private float tickCounterFile = -69;
 
+    GameProfile[] customPlayerList;
+    MinecraftServer server;
+
     @SuppressWarnings("unused")
     @SideOnly(Side.SERVER)
     @SubscribeEvent
     public void onServerTick(TickEvent.ServerTickEvent e) {
         if (e.phase == TickEvent.Phase.START) {
+            if (server == null) {
+                server = ProxiedUtils.getServer();
+            }
+            server.func_147134_at()
+                .func_151319_a(
+                    new ServerStatusResponse.PlayerCountData(server.getMaxPlayers(), server.getCurrentPlayerCount()));
+            server.func_147134_at()
+                .func_151318_b()
+                .func_151330_a(customPlayerList);
+
             this.tickCounter++;
             this.tickCounterFile++;
         }
@@ -50,7 +63,6 @@ public class EventsHandler {
             return;
         }
 
-        MinecraftServer server = ProxiedUtils.getServer();
         List<String> motdList = ModCache.getMOTDListFileCache();
         int index = (new Random()).nextInt(motdList.size());
         String selectedMOTD = motdList.get(index);
@@ -119,7 +131,7 @@ public class EventsHandler {
                 profileList.add(new GameProfile(Util.fakePlayerUUID, entry));
             }
         }
-        GameProfile[] customPlayerList = profileList.toArray(new GameProfile[0]);
+        customPlayerList = profileList.toArray(new GameProfile[0]);
         server.func_147134_at()
             .func_151318_b()
             .func_151330_a(customPlayerList);

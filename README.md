@@ -8,10 +8,13 @@ A 1.7.10 Forge server-side mod to customize your server MOTD and player list!
 ![image](images/screenshot2.png)
 
 ## Downloads
-| [CurseForge ![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/null) |
-| ---------- |
-| [Modrinth ![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/null)   |
-| [Git ![git](images/icons/git.png)](https://github.com/JackOfNoneTrades/CustomMOTD/releases)        |
+* [CurseForge ![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/custom-motd)
+* [Modrinth ![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/null)
+* [Git ![git](images/icons/git.png)](https://github.com/JackOfNoneTrades/CustomMOTD/releases)
+
+## Dependencies
+
+* As of version `1.0.1`, `UniMixins` ([![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/unimixins), [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/unimixins/versions), [![git](images/icons/git.png)](https://github.com/LegacyModdingMC/UniMixins/releases)) is a required dependency.
 
 ### Features
 * Vanilla Compatible
@@ -23,7 +26,7 @@ A 1.7.10 Forge server-side mod to customize your server MOTD and player list!
 * `{playerlist}` variable backport
 * Configurable server info update and hot reload intervals
 * Config reload command `/custommotd_reload`
-* TabFaces () compat
+* `TabFaces` ([![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/tabfaces), [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/tabfaces), [![git](images/icons/git.png)](https://github.com/JackOfNoneTrades/TabFaces/releases)) compat
 
 On first run, the mod will generate the two required files for MOTD customization in <server root dir>/CustomMOTD
 There are 2 files used for configuration:
