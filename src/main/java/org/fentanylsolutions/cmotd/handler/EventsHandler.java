@@ -12,6 +12,7 @@ import net.minecraft.util.ChatComponentText;
 
 import org.apache.commons.lang3.text.WordUtils;
 import org.fentanylsolutions.cmotd.Config;
+import org.fentanylsolutions.cmotd.CustomMOTD;
 import org.fentanylsolutions.cmotd.ModCache;
 import org.fentanylsolutions.cmotd.util.ProxiedUtils;
 import org.fentanylsolutions.cmotd.util.TextUtil;
@@ -20,6 +21,7 @@ import org.fentanylsolutions.cmotd.util.Util;
 import com.mojang.authlib.GameProfile;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -231,5 +233,17 @@ public class EventsHandler {
             }
         }
         return res.toString();
+    }
+
+    @SubscribeEvent
+    public void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent e) {
+        CustomMOTD.LOG.debug("Player " + e.player.getDisplayName() + " joined");
+        tickCounter = -69;
+    }
+
+    @SubscribeEvent
+    public void onPlayerLEave(PlayerEvent.PlayerLoggedOutEvent e) {
+        CustomMOTD.LOG.debug("Player " + e.player.getDisplayName() + " left");
+        tickCounter = -69;
     }
 }
