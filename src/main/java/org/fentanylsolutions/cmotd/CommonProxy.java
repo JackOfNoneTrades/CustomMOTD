@@ -25,6 +25,8 @@ public class CommonProxy {
         if (ProxiedUtils.isSMP() && !ProxiedUtils.isClientSide()) {
             event.registerServerCommand(new CommandReload());
         }
+
+        ModCompat.detectMods();
     }
 
     public void serverStarted(FMLServerStartedEvent e) {

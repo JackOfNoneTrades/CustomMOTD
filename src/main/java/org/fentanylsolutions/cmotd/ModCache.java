@@ -2,6 +2,7 @@ package org.fentanylsolutions.cmotd;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.fentanylsolutions.cmotd.handler.FileHandler;
 
@@ -20,9 +21,13 @@ public class ModCache {
     }
 
     public static void cacheMOTDListFile() {
-        if (!FileHandler.readMOTDListFile()
-            .isEmpty()) {
-            MOTD_LIST_CACHE = FileHandler.readMOTDListFile();
+        List<String> rawList = FileHandler.readMOTDListFile();
+        if (!rawList.isEmpty()) {
+            MOTD_LIST_CACHE = rawList.stream()
+                .filter(
+                    line -> !line.trim()
+                        .startsWith("#"))
+                .collect(Collectors.toList());
         } else {
             MOTD_LIST_CACHE = new ArrayList<>();
         }

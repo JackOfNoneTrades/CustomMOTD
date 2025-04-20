@@ -10,6 +10,9 @@ public class Config {
     public static int reload_interval = 60;
     public static int server_stat_reload_interval = 60;
 
+    public static String blood_moon_active_msg = "Blood moon has risen!";
+    public static String blood_moon_inactive_msg = "";
+
     public static void synchronizeConfiguration(File configFile) {
         Configuration configuration = new Configuration(configFile);
 
@@ -32,6 +35,18 @@ public class Config {
             -1,
             Integer.MAX_VALUE,
             "Seconds after which server stats (such as amount of players or difficulty) are refreshed.");
+
+        blood_moon_active_msg = configuration.getString(
+            "blood_moon_active_msg",
+            Configuration.CATEGORY_GENERAL,
+            blood_moon_active_msg,
+            "How to format {rt_bloodmoon_active} (when the Random Things blood moon is active).");
+
+        blood_moon_inactive_msg = configuration.getString(
+            "blood_moon_inactive_msg",
+            Configuration.CATEGORY_GENERAL,
+            blood_moon_inactive_msg,
+            "How to format {rt_bloodmoon_inactive} (when the Random Things blood moon is inactive).");
 
         if (configuration.hasChanged()) {
             configuration.save();

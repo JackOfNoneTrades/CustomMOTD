@@ -35,4 +35,5 @@
  */
 dependencies {
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.7.4-GTNH:dev")
+    compileOnly(rfg.deobf("curse.maven:random-things-59816:2225310"))
 }

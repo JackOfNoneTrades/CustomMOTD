@@ -27,6 +27,7 @@ A 1.7.10 Forge server-side mod to customize your server MOTD and player list!
 * Configurable server info update and hot reload intervals
 * Config reload command `/custommotd_reload`
 * `TabFaces` ([![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/tabfaces), [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/tabfaces), [![git](images/icons/git.png)](https://github.com/JackOfNoneTrades/TabFaces/releases)) compat
+* Modded compat variables
 
 On first run, the mod will generate the two required files for MOTD customization in <server root dir>/CustomMOTD
 There are 2 files used for configuration:
@@ -45,6 +46,11 @@ Contains the replacement template for the player list tooltip.
 * `{mcversion}` - server Minecraft version
 * `{radio}` - obfuscated radio bars
 * `{playerlist}` - list up to 10 players currently online
+
+### Modded Variables
+* `{rt_bloodmoon}` - Random Things Blood Moon
+
+Feel free to reach out to me to propose new modded variables.
 
 ### Color Codes and Formatting
 Full support for default Minecraft color codes and formatting using `&`.
