@@ -17,12 +17,12 @@ public class CommandReload implements ICommand {
 
     @Override
     public String getCommandName() {
-        return "custommotd_reload";
+        return "cmotd_reload";
     }
 
     @Override
     public String getCommandUsage(ICommandSender sender) {
-        return "/custommotd_reload";
+        return "/cmotd_reload";
     }
 
     @Override
@@ -36,7 +36,7 @@ public class CommandReload implements ICommand {
         Config.synchronizeConfiguration(CustomMOTD.configFile);
         ModCache.cacheMOTDListFile();
         ModCache.cachePlayerListFile();
-        CustomMOTD.LOG.info(sender.getCommandSenderName() + " issued custommotd_reload command");
+        CustomMOTD.LOG.info(sender.getCommandSenderName() + " issued cmotd_reload command");
     }
 
     @Override

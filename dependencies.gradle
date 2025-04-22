@@ -36,4 +36,7 @@
 dependencies {
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.7.4-GTNH:dev")
     compileOnly(rfg.deobf("curse.maven:random-things-59816:2225310"))
+    compileOnly(rfg.deobf("maven.modrinth:serene-seasons:NoGF2P4Y"))
+    compileOnly(rfg.deobf("curse.maven:lycanites-mobs-224770:2268607"))
+    compileOnly(rfg.deobf("curse.maven:terrafirmacraft-302973:2627990"))
 }

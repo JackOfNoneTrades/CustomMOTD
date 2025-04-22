@@ -23,9 +23,9 @@ A 1.7.10 Forge server-side mod to customize your server MOTD and player list!
 
 ### New Features
 * Mod is fully server-side
-* `{playerlist}` variable backport
+* `{playerlist}` variable backport, `{weather}`, `{time}`, `{time_of_the_day}`
 * Configurable server info update and hot reload intervals
-* Config reload command `/custommotd_reload`
+* Config reload command `/cmotd_reload`
 * `TabFaces` ([![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/tabfaces), [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/tabfaces), [![git](images/icons/git.png)](https://github.com/JackOfNoneTrades/TabFaces/releases)) compat
 * Modded compat variables
 
@@ -46,9 +46,15 @@ Contains the replacement template for the player list tooltip.
 * `{mcversion}` - server Minecraft version
 * `{radio}` - obfuscated radio bars
 * `{playerlist}` - list up to 10 players currently online
+* `{weather}` - displays weather, formatting is configurable
+* `{time}` - displays time, formatting is configurable
+* `{time_of_the_day}` - displays the time of the day (e.g. Noon, Midnight)
 
 ### Modded Variables
-* `{rt_bloodmoon}` - Random Things Blood Moon
+* `{rt_bloodmoon}` - Random Things Blood Moon, formatting is configurable
+* <del>`{serene_season}` - Serene Seasons season </del> For now the `1.7.10` port of Serene Seasons is broken
+* `{lycanites_event}` - Active Lycanites Mobs event in the overworld, formatting is configurable
+* TerraFirmaCraft - Various vars: `{tfc_season}`, `{tfc_day_of_month}`,`{tfc_day_of_week}`,`{tfc_day_of_year}`,`{tfc_month}`,`{tfc_month_name}`,`{tfc_year}`,`{tfc_hour}`,`{tfc_temperature}`
 
 Feel free to reach out to me to propose new modded variables.
 

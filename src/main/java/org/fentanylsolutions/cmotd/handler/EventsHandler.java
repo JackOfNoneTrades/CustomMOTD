@@ -14,9 +14,12 @@ import org.fentanylsolutions.cmotd.Config;
 import org.fentanylsolutions.cmotd.CustomMOTD;
 import org.fentanylsolutions.cmotd.ModCache;
 import org.fentanylsolutions.cmotd.ModCompat;
+import org.fentanylsolutions.cmotd.handler.replacers.LycaniteReplacer;
 import org.fentanylsolutions.cmotd.handler.replacers.MiscReplace;
 import org.fentanylsolutions.cmotd.handler.replacers.RandomThingsReplace;
+import org.fentanylsolutions.cmotd.handler.replacers.SereneSeasonsReplace;
 import org.fentanylsolutions.cmotd.handler.replacers.SpecialReplace;
+import org.fentanylsolutions.cmotd.handler.replacers.TFCReplacer;
 import org.fentanylsolutions.cmotd.handler.replacers.VanillaReplace;
 import org.fentanylsolutions.cmotd.util.ProxiedUtils;
 import org.fentanylsolutions.cmotd.util.Util;
@@ -77,6 +80,15 @@ public class EventsHandler {
         if (ModCompat.RTLoaded) {
             selectedMOTD = RandomThingsReplace.replaceVars(selectedMOTD);
         }
+        if (ModCompat.SereneSeasonsLoaded) {
+            selectedMOTD = SereneSeasonsReplace.replaceVars(selectedMOTD);
+        }
+        if (ModCompat.LycanitesLoaded) {
+            selectedMOTD = LycaniteReplacer.replaceVars(selectedMOTD);
+        }
+        if (ModCompat.TFCLoaded) {
+            selectedMOTD = TFCReplacer.replaceVars(selectedMOTD);
+        }
 
         /* Must be last */
         selectedMOTD = SpecialReplace.replaceVars(selectedMOTD);
@@ -99,6 +111,15 @@ public class EventsHandler {
             entry = MiscReplace.replaceVars(entry);
             if (ModCompat.RTLoaded) {
                 entry = RandomThingsReplace.replaceVars(entry);
+            }
+            if (ModCompat.SereneSeasonsLoaded) {
+                entry = SereneSeasonsReplace.replaceVars(entry);
+            }
+            if (ModCompat.LycanitesLoaded) {
+                entry = LycaniteReplacer.replaceVars(entry);
+            }
+            if (ModCompat.TFCLoaded) {
+                entry = TFCReplacer.replaceVars(entry);
             }
 
             /* Must be last */
