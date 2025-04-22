@@ -5,11 +5,11 @@
 A 1.7.10 Forge server-side mod to customize your server MOTD and player list!
 
 ![image](images/screenshot1.png)
-![image](images/screenshot2.png)
+![image](images/screenshot2.png) ![image](images/screenshot3.png)
 
 ## Downloads
 * [CurseForge ![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/custom-motd)
-* [Modrinth ![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/null)
+* [Modrinth ![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/custom-motd-1.7)
 * [Git ![git](images/icons/git.png)](https://github.com/JackOfNoneTrades/CustomMOTD/releases)
 
 ## Dependencies
