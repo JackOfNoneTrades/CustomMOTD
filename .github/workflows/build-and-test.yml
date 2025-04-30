@@ -4,8 +4,12 @@ name: Build and test
 on:
   pull_request:
     branches: [ master, main ]
+    paths-ignore:
+      - 'README.md'
   push:
     branches: [ master, main ]
+    paths-ignore:
+      - 'README.md'
 
 jobs:
   build-and-test:

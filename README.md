@@ -29,15 +29,15 @@ A 1.7.10 Forge server-side mod to customize your server MOTD and player list!
 * `TabFaces` ([![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/tabfaces), [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/tabfaces), [![git](images/icons/git.png)](https://github.com/JackOfNoneTrades/TabFaces/releases)) compat
 * Modded compat variables
 
-On first run, the mod will generate the two required files for MOTD customization in <server root dir>/CustomMOTD
+On first run, the mod will generate the two required files for MOTD customization in `<server root dir>/CustomMOTD`.
+
 There are 2 files used for configuration:
 * `customotdlist.txt`
-
-This mod supports multiline MOTDs (2 lines as per vanilla). To set a new line, use the pipe | character in the entry in `custommotdlist.txt`
-Each entry in `custommotdlist.txt` is a separate MOTD entry.
-
 * `customplayerlist.txt`
-Contains the replacement template for the player list tooltip.
+
+This mod supports multiline MOTDs (2 lines as per vanilla). To set a new line, use the pipe `|` character in the entry in `custommotdlist.txt`
+Each entry in `custommotdlist.txt` is a separate MOTD entry.
+`customplayerlist.txt` contains the replacement template for the player list tooltip.
 
 ### Variables
 * `{playercount}` - number of players currently on the server
@@ -54,7 +54,7 @@ Contains the replacement template for the player list tooltip.
 * `{rt_bloodmoon}` - Random Things Blood Moon, formatting is configurable
 * <del>`{serene_season}` - Serene Seasons season </del> For now the `1.7.10` port of Serene Seasons is broken
 * `{lycanites_event}` - Active Lycanites Mobs event in the overworld, formatting is configurable
-* TerraFirmaCraft - Various vars: `{tfc_season}`, `{tfc_day_of_month}`,`{tfc_day_of_week}`,`{tfc_day_of_year}`,`{tfc_month}`,`{tfc_month_name}`,`{tfc_year}`,`{tfc_hour}`,`{tfc_temperature}`
+* TerraFirmaCraft - Various vars: `{tfc_season}`, `{tfc_day_of_month}`, `{tfc_day_of_week}`, `{tfc_day_of_year}`, `{tfc_month}`, `{tfc_month_name}`, `{tfc_year}`, `{tfc_hour}`, `{tfc_temperature}`
 
 Feel free to reach out to me to propose new modded variables.
 
