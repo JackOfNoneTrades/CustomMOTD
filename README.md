@@ -69,8 +69,8 @@ This mod is based on `p455w0rd's MOTD Customizer` [![curse](images/icons/curse.p
 
 ## License
 
-`LgplV3 + SNEED`.
+`LGPLv3`.
 
 <br>
 
-![license](images/lgplsneed_small.png)
+![license](images/license_small.png)
