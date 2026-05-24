@@ -17,9 +17,5 @@ pluginManagement {
 }
 
 plugins {
-<<<<<<< HEAD
-    id("com.gtnewhorizons.gtnhsettingsconvention") version("1.0.49")
-=======
     id("com.gtnewhorizons.gtnhsettingsconvention") version("1.0.51")
->>>>>>> 8419e3e (Updated buildscript)
 }
