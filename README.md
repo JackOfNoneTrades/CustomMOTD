@@ -1,20 +1,23 @@
 # Custom MOTD
 
-## Description
-
 A 1.7.10 Forge server-side mod to customize your server MOTD and player list!
 
-[![hub](images/badges/github.png)](https://github.com/JackOfNoneTrades/CustomMOTD)
-[![modrinth](images/badges/modrinth.png)](https://modrinth.com/mod/custom-motd-1.7)
+![logo](images/logo_small.png)
+
+[![hub](images/badges/github.png)](https://github.com/JackOfNoneTrades/CustomMOTD/releases)
 [![curse](images/badges/curse.png)](https://www.curseforge.com/minecraft/mc-mods/custom-motd)
+[![modrinth](images/badges/modrinth.png)](https://modrinth.com/mod/custom-motd-1.7)
+[![67](images/badges/67.png)](https://67.fentanylsolutions.org/mod/custom-motd-1.7)
 [![maven](images/badges/maven.png)](https://maven.fentanylsolutions.org/#/releases/org/fentanylsolutions/cmotd)
 ![forge](images/badges/forge.png)
+[![cord](images/badges/cord.png)](https://discord.gg/xAWCqGrguG)
 
 ![image](images/screenshot1.png)
 ![image](images/screenshot2.png) ![image](images/screenshot3.png)
 
 ## Dependencies
-* [UniMixins](https://modrinth.com/mod/unimixins) [![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/unimixins)  [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/unimixins/versions) [![git](images/icons/git.png)](https://github.com/LegacyModdingMC/UniMixins/releases)
+
+* As of version `1.0.1`, `UniMixins` ([![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/unimixins), [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/unimixins/versions), [![git](images/icons/git.png)](https://github.com/LegacyModdingMC/UniMixins/releases)) is a required dependency.
 
 ### Features
 * Vanilla Compatible
@@ -26,7 +29,7 @@ A 1.7.10 Forge server-side mod to customize your server MOTD and player list!
 * `{playerlist}` variable backport, `{weather}`, `{time}`, `{time_of_the_day}`
 * Configurable server info update and hot reload intervals
 * Config reload command `/cmotd_reload`
-* `TabFaces` [![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/tabfaces) [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/tabfaces) [![git](images/icons/git.png)](https://github.com/JackOfNoneTrades/TabFaces/releases) compat
+* `TabFaces` ([![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/tabfaces), [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/tabfaces), [![git](images/icons/git.png)](https://github.com/JackOfNoneTrades/TabFaces/releases)) compat
 * Modded compat variables
 
 On first run, the mod will generate the two required files for MOTD customization in `<server root dir>/CustomMOTD`.
@@ -65,7 +68,7 @@ You can comment out a line by prefixing it with `#`.
 Special characters `|` and `&`, as well as leading `#` can be escaped with a backslash (`\`).
 
 ## Credits
-This mod is based on `p455w0rd's MOTD Customizer` [![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/p455w0rds-motd-customizer).
+This mod is based on `p455w0rd's MOTD Customizer` ([![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/p455w0rds-motd-customizer)).
 
 ## License
 
